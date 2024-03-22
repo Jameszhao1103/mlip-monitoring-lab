@@ -1,0 +1,10 @@
+#!/bin/sh
+'''exec' "/Users/jameszhao/MyDocument/vscode/cmu/24 Spring/11695/lab8/mlip-monitoring-lab/env/bin/python3.11" "$0" "$@"
+' '''
+# -*- coding: utf-8 -*-
+import re
+import sys
+from pip._internal.cli.main import main
+if __name__ == '__main__':
+    sys.argv[0] = re.sub(r'(-script\.pyw|\.exe)?$', '', sys.argv[0])
+    sys.exit(main())
